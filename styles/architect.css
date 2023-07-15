@@ -17,6 +17,11 @@ body {
   border: 0;
   
 }
+.description {
+    color: var(--dark-03, #727272);
+    font-size: 1rem;
+    font-weight: 400;
+  }
 /* header styles */
 header {
   background: rgba(255, 144, 14, 0.1);
@@ -63,17 +68,51 @@ nav li a {
   font-size: 4rem;
   font-weight: 700;
 }
-.banner-description {
-  color: var(--dark-03, #727272);
-  font-size: 1rem;
-  font-weight: 400;
-}
+
 .banner >img{
    width: 100%; 
    /* width 100% mane ki bujhay recap koro */
     margin-top: 20px;
 
 }
+
+/* main style */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+/* teams */
+.teams-container{
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding: 0px 70px;
+}
+.teams-title{
+    font-size: 2.2rem;
+
+}
+.quick-list{
+    color: #727272 ;
+    font-weight: 500; 
+}
+.text-features{
+    color: #FF900E ;
+    font-weight: 700;
+}
+
+
+
+
+
+
 
 
 
@@ -87,16 +126,26 @@ nav li a {
     header{
         padding: 20px;
     }
-    nav{
+    nav, .teams-container{
         flex-direction: column;
+    }
+   
+    .teams-img-container{
+      
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .teams-content{
+        padding: 0px 20px;
     }
 }
 /* medium devices */
 @media screen and  (min-width: 576px) and (max-width: 960px) {
-    nav{
+    nav, .teams-container{
         flex-direction: column;
     }
     header{
         padding: 50px;
     }
+   
 }
