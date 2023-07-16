@@ -128,6 +128,25 @@ main {
   color: #424242;
   margin: 10px 0px;
 }
+/* sponsor styles */
+.sponsors{
+    text-align: center;
+}
+.sponsors-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    gap: 30px;
+}
+sponsors-img-container img{
+   width: 165px; 
+}
+
+
+
+
+
 
 /* responsive Styles  */
 
@@ -137,7 +156,7 @@ main {
     padding: 20px;
   }
   nav,
-  .teams-container,.facts-card-container {
+  .teams-container,.facts-card-container,.sponsors-img-container {
     flex-direction: column;
   }
 
@@ -154,7 +173,7 @@ main {
 /* medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   nav,
-  .teams-container {
+  .teams-container,.sponsors-img-container {
     flex-direction: column;
   }
   header {
