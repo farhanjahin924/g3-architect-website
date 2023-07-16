@@ -142,8 +142,14 @@ main {
 sponsors-img-container img{
    width: 165px; 
 }
-
-
+/* footer */
+.foot{
+    text-align: center;
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 20px 0px;
+    margin: 20px 240px;
+}
 
 
 
@@ -169,6 +175,10 @@ sponsors-img-container img{
   .facts-card-container{
     gap: 20px;
   }
+  .foot{
+    
+    margin: 20px 40px;
+}
 }
 /* medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -179,4 +189,8 @@ sponsors-img-container img{
   header {
     padding: 50px;
   }
+  .foot{
+    
+    margin: 20px 40px;
+}
 }
